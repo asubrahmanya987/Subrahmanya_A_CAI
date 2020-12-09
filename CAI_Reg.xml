@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CAI_Tests">
+
+<listeners>
+<listener class-name="com.CAI.generic.ListenerTest"/>
+</listeners>
+
+
+<test name="CAI_RegistrationTest" >
+<parameter name="browser" value="chrome"/>
+<classes>
+<class name="com.CAI.tests.RegistrationPositiveTest"/>
+ <class name="com.CAI.tests.RegistrationNegativeTest"/> 
+
+</classes>
+
+</test>
+
+</suite>
+
